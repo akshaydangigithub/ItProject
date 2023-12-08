@@ -126,6 +126,9 @@ body{
 
 
 @media (max-width: 991px) {
+  body {
+    overflow: auto;
+  }
   .cursor {
     display: none;
   }
