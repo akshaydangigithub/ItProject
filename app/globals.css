@@ -20,7 +20,7 @@ body {
   width: 100%;
 }
 
-body{
+body {
   overflow: hidden;
 }
 
@@ -106,7 +106,7 @@ body{
   }
 }
 
-.cursor.active{
+.cursor.active {
   height: 70px;
   width: 70px;
   background-color: rgba(188, 188, 188, 0.303);
@@ -124,8 +124,10 @@ body{
   transform: translateY(100%);
 } */
 
-
 @media (max-width: 991px) {
+  body {
+    overflow: auto;
+  }
   .cursor {
     display: none;
   }
