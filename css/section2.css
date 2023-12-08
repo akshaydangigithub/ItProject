@@ -1,0 +1,48 @@
+.section2 {
+  background-color: #191b1d;
+  font-family: f1;
+  color: #fff;
+  padding: 10vw 2vw 6vw 2vw;
+
+   > h1 > span{
+    font-size: 4.3vw;
+    font-weight: 550;
+  }
+}
+
+.section2_content {
+  height: 100%;
+  width: 65%;
+  margin-top: 5vw;
+  /* background-color: red; */
+
+  > h6 {
+    font-weight: 600;
+    margin-bottom: 1vw;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    color: #b7b7b8;
+  }
+}
+
+.section2_content_line {
+  height: 1px;
+  width: 100%;
+  background-color: #b7b7b8;
+}
+.section2_content_num {
+  font-size: 6rem !important;
+}
+.section2_content_text {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  color: #b7b7b8;
+}
+
+@media (max-width: 991px) {
+  .section2_content{
+    width: 100%;
+  }
+}
