@@ -2,6 +2,10 @@ import React from "react";
 import "@/css/section4.css";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import AnimImage from "../AnimImage";
+import StartAProjectAnim from "../StartAProjectAnim";
+import StartAProjectSec2 from "../StartAProjectSec2";
+import Companies from "../Companies";
 
 const Section4 = () => {
   return (
@@ -27,9 +31,12 @@ const Section4 = () => {
               the combined effort from both groups of professionals in
               Singapore.
             </motion.h6>
-            <motion.div className="section4_line"  initial={{ width: 0 }}
+            <motion.div
+              className="section4_line"
+              initial={{ width: 0 }}
               whileInView={{ width: "100%" }}
-              transition={{ duration: 0.5, delay: 0.1 }}></motion.div>
+              transition={{ duration: 0.5, delay: 0.1 }}
+            ></motion.div>
             <div className="row mt-5">
               <div className="col-md-6">
                 <motion.h1
@@ -59,9 +66,12 @@ const Section4 = () => {
                   ecommerce brands in Singapore.
                 </p>
               </div>
-              <motion.div className="section4_line"  initial={{ width: 0 }}
-              whileInView={{ width: "100%" }}
-              transition={{ duration: 0.5, delay: 0.1 }}></motion.div>
+              <motion.div
+                className="section4_line"
+                initial={{ width: 0 }}
+                whileInView={{ width: "100%" }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              ></motion.div>
             </div>
             <div className="row mt-4">
               <div className="col-md-6">
@@ -96,125 +106,13 @@ const Section4 = () => {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-md-10">
-            <div className="img_container">
-              <img
-                data-scroll
-                data-scroll-speed="4"
-                src="./section4.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="col-md-2"></div>
-        </div>
+        <AnimImage image={"./section4.jpg"} />
 
-        <div className="row mt-5 px-5 d-md-flex d-none">
-          <div className="col-2 mt-5 d-flex align-items-center justify-content-center">
-            <img height={130} src="./singapore_airline.png" alt="" />
-          </div>
-          <div className="col-2 mt-5 d-flex align-items-center justify-content-center">
-            <img height={130} src="./singtel.png" alt="" />
-          </div>
-          <div className="col-2 mt-5 d-flex align-items-center justify-content-center">
-            <img height={130} src="./nus.png" alt="" />
-          </div>
-          <div className="col-2 mt-5 d-flex align-items-center justify-content-center">
-            <img height={130} src="./standard-chartered.png" alt="" />
-          </div>
-          <div className="col-2 mt-5 d-flex align-items-center justify-content-center">
-            <img height={130} src="./samsung.png" alt="" />
-          </div>
-          <div className="col-2 mt-5 d-flex align-items-center justify-content-center">
-            <img height={130} src="./sysmex.png" alt="" />
-          </div>
-        </div>
+        <Companies />
 
-        <div className="row px-md-5 px-3 mt-5">
-          <div className="col">
-            <motion.h1
-              className="section4_headH1 fs-1"
-              initial={{ opacity: 0, y: -100, scale: 0.8 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              Are you looking for web design agency in Singapore? We provide
-              hassle-free web design services that your business needs.
-            </motion.h1>
-          </div>
-        </div>
+        <StartAProjectSec2 />
 
-        <div className="row mt-5 pe-5">
-          <div className="col-md-4"></div>
-          <div className="col-md-8 pe-md-5 ps-4">
-            <motion.p
-              className="mb-4 sectoin4_textP2"
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              With a sustainable and fast-growing market, Singapore keeps
-              drawing the attention of investors from both local and foreign
-              regions, paving the way to unending competition among businesses
-              which primarily aim to establish their online presence to attract
-              customers in Singapore. What can be better than a creative and
-              responsive website with an engaging and intuitive UI? Again, a
-              website that is good at serving your ecommerce consumers may not
-              be good at all when it comes to persuading corporate stakeholders
-              in Singapore. Our designers and developers in Singapore understand
-              this simple fact and act accordingly to the clients' benefits.
-            </motion.p>
-            <motion.p
-              className="m-0 sectoin4_textP2"
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              Every designer and developer at our company in Singapore possess
-              the required skills plus one special thing - understanding of how
-              customers/ audiences in Singapore behave as they come across a
-              website or web application. This knowledge helps them to realize
-              the pain points of customers which are never good for business,
-              even if it's about a billion-dollar corporate company in
-              Singapore. Designers and developers at our agency in Singapore try
-              to keep the UI and functional aspects as simple yet engaging as
-              possible so that users feel like interacting with the website and
-              their experience remains positive.
-            </motion.p>
-            <motion.div
-              className="section4_line"
-              initial={{ width: 0 }}
-              whileInView={{ width: "100%" }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            ></motion.div>
-            <motion.button
-              className="start_project_btn mt-4"
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              Start A Project Now <FaArrowRight className="ms-3" />
-            </motion.button>
-          </div>
-        </div>
-
-        <div className="row mt-5 tagline ">
-          <div className="col tagline mt-5">
-            <h1 className="me-5">Start a Project</h1>
-            <h1 className="me-5">Start a Project</h1>
-            <h1 className="me-5">Start a Project</h1>
-            <h1 className="me-5">Start a Project</h1>
-            <h1 className="me-5">Start a Project</h1>
-          </div>
-          <h6 className="text-white text-center fw-bold mt-4">
-            Request for a Quotation{" "}
-            <FaArrowRight
-              className="ms-2"
-              style={{ transform: "rotate(-45deg)" }}
-            />
-          </h6>
-        </div>
+        <StartAProjectAnim />
       </div>
     </>
   );

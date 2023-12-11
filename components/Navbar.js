@@ -1,6 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "@/css/navbar.css";
+import Link from "next/link";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,24 +12,66 @@ const Navbar = () => {
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // function for animate navbar start
+      function animateNavbar() {
+        gsap.set(".logo", { opacity: 0, scale: 0 });
+        gsap.set(".contact_us", { opacity: 0, scale: 0 });
+        gsap.set(".line", { opacity: 0, scale: 0 });
+
+        var navbarTl = gsap.timeline();
+
+        navbarTl.to(".logo", {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 1,
+          ease: "Power4.easeOut",
+        });
+
+        navbarTl.to(".line", {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: -0.7,
+          stagger: 0.1,
+          ease: "Power4.easeOut",
+        });
+
+        navbarTl.to(".contact_us", {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          stagger: 0.1,
+          ease: "Power4.easeOut",
+        });
+      }
+      animateNavbar();
+      // function for animate navbar end
+    }
+  }, []);
   return (
     <>
       <nav>
         <div className="row">
           <div className="col-md-7 m-0 p-0 d-flex align-items-center justify-content-md-start justify-content-between ">
-            <h4 className="logo">
-              <span>S</span>
-              <span>O</span>
-              <span>F</span>
-              <span>T</span>
-              <span>S</span>
-              <span>E</span>
-              <span>E</span>
-              <span>K</span>
-              <span>E</span>
-              <span>R</span>
-              <span>S</span>
-            </h4>
+            <Link href="/">
+              <h4 className="logo">
+                <span>S</span>
+                <span>O</span>
+                <span>F</span>
+                <span>T</span>
+                <span>S</span>
+                <span>E</span>
+                <span>E</span>
+                <span>K</span>
+                <span>E</span>
+                <span>R</span>
+                <span>S</span>
+              </h4>
+            </Link>
 
             <div
               className={`menu mb-2 ${menuOpen ? "" : ""}`}
@@ -64,14 +110,34 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="col-md-7 prt2_nav d-flex flex-column justify-content-end ps-5 mt-5 pt-5 mb-md-0 mb-4">
-            <h4>About us</h4>
-            <h4>Website Design</h4>
-            <h4>Web Development </h4>
-            <h4>Website Revamp</h4>
-            <h4>Website Maintenance</h4>
-            <h4>Ecommerce PSG</h4>
-            <h4>Portfolio</h4>
-            <h4>Get in Touch</h4>
+            <Link className="text-decoration-none" href="/aboutUs">
+              <h4>About us</h4>
+            </Link>
+            <Link className="text-decoration-none" href="/webDesign">
+              <h4>Website Design</h4>
+            </Link>
+            <Link className="text-decoration-none" href="/webDevelopment">
+              <h4>Web Development </h4>
+            </Link>
+            <Link className="text-decoration-none" href="/websiteRevamp">
+              <h4>Website Revamp</h4>
+            </Link>
+
+            <Link className="text-decoration-none" href="/websiteMaintenance">
+              <h4>Website Maintenance</h4>
+            </Link>
+
+            <Link className="text-decoration-none" href="/ecommerce">
+              <h4>Ecommerce PSG</h4>
+            </Link>
+
+            <Link className="text-decoration-none" href="/portfolio">
+              <h4>Portfolio</h4>
+            </Link>
+
+            <Link className="text-decoration-none" href="/getinTouch">
+              <h4>Get in Touch</h4>
+            </Link>
           </div>
           <div className="col-md-2 d-md-flex d-none align-items-center justify-content-center">
             <h1 className="nav_text_strok">Read Our Blog</h1>

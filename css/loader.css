@@ -1,9 +1,10 @@
 .loader{
     height: 100vh;
     width: 100%;
-    background-color: #191B1D;
+    background-color: black;
     z-index: 99;
     position: fixed;
+    overflow: hidden;
 }
 .loader_progress_main{
     height: fit-content;
@@ -19,4 +20,10 @@
     font-weight: bolder;
     font-size: 8rem;
     /* transform: translateY(100%); */
+}
+
+@media (max-width: 768px){
+    .loader img{
+        height: 40%;
+    }
 }
