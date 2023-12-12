@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .noise_effect {
@@ -36,6 +36,8 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
 }
 .noise_effect:after {
   animation: grain 0.5s steps(1) infinite;

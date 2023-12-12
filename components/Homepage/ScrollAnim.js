@@ -30,7 +30,7 @@ const ScrollAnim = ({
         // Create a ScrollTrigger for the first animation
         ScrollTrigger.create({
           trigger: section3,
-          start: "top 100%",
+          start: "top 120%",
           end: "bottom top",
           scrub: 1,
           // markers: true,
@@ -49,7 +49,7 @@ const ScrollAnim = ({
           transform: "translateX(-100%)",
           stagger: 0.1,
           duration: 2,
-          delay: -1.5,
+          delay: -2,
           ease: "Expo.ease",
           // markers: true,
         });

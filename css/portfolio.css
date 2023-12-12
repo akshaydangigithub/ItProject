@@ -1,0 +1,142 @@
+.portfolio {
+  font-family: f1;
+  color: white;
+  padding: 6vw;
+  transition: all 0.3s ease;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.portfolio_left {
+  padding-top: 9vmax;
+}
+
+.portfolio_left h4 {
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.portfolio_left h4 span {
+  display: block;
+  transition: all 0.6s ease;
+  /* transform: translateY(100%); */
+}
+
+.portfolio_left h1 {
+  line-height: 1;
+  font-size: 5vmax;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.portfolio_left h1 span {
+  display: block;
+  transition: all 0.6s ease;
+  /* transform: translateY(100%); */
+}
+
+.portfolio_left p {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.portfolio_left p span {
+  display: block;
+  transition: all 0.6s ease;
+  /* transform: translateY(100%); */
+}
+
+.visit_website_btn {
+  height: 12vw;
+  width: 12vw;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 2;
+  transition: all 0.6s ease;
+  /* scale: 0; */
+  cursor: pointer;
+  position: relative;
+}
+
+.visit_website_btn_h6Text,
+.visit_website_btn_right_arrow {
+  font-weight: 700;
+  z-index: 99;
+  transition: all 0.6s ease;
+}
+
+.visit_website_btn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+
+.visit_website_btn:hover .visit_website_btn_h6Text {
+  font-weight: bolder;
+  color: black;
+  transition: all 0.6s ease;
+}
+
+.visit_website_btn:hover .visit_website_btn_right_arrow {
+  color: black;
+}
+
+.visit_website_btn:hover::after {
+  height: 100%;
+  width: 100%;
+}
+.portfolio_right {
+  padding-top: 3.5vmax;
+}
+.swiper_image {
+  height: 450px;
+  width: 380px;
+  overflow: hidden !important;
+  > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media (max-width:768px) {
+  .portfolio_left{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    transform: translate(-50%, -50%);
+  }
+  .swiper_image{
+    height: 80vh;
+    width: 100%;
+  }
+  .portfolio_right{
+    padding-top: 9vmax; 
+  }
+}
+
+@media (max-width:563px){
+  .portfolio_left{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 60%;
+    width: 95vw;
+    transform: translate(-50%, -50%);
+  }
+}

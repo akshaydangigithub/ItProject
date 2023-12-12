@@ -47,7 +47,7 @@
   /* transform: translateY(100%); */
 }
 
-.learn_more_btn2 {
+.learn_more_btn {
   height: 12vw;
   width: 12vw;
   border-radius: 50%;
@@ -60,14 +60,14 @@
   position: relative;
 }
 
-.h6Text2,
-.hero_Down_Arrow2 {
+.h6Text,
+.hero_Down_Arrow {
   font-weight: 700;
   z-index: 99;
   transition: all 0.6s ease;
 }
 
-.learn_more_btn2::after {
+.learn_more_btn::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -81,17 +81,17 @@
   transition: all 0.6s ease;
 }
 
-.learn_more_btn2:hover .h6Text2 {
+.learn_more_btn:hover .h6Text {
   font-weight: bolder;
   color: black;
   transition: all 0.6s ease;
 }
 
-.learn_more_btn2:hover .hero_Down_Arrow2 {
+.learn_more_btn:hover .hero_Down_Arrow {
   color: black;
 }
 
-.learn_more_btn2:hover::after {
+.learn_more_btn:hover::after {
   height: 100%;
   width: 100%;
 }

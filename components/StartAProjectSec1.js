@@ -3,7 +3,7 @@ import "@/css/startaprojectsec2.css";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const StartAProjectSec1 = () => {
+const StartAProjectSec1 = ({ head, text1, text2 }) => {
   return (
     <>
       <div className="startaprojectsec2 row">
@@ -14,12 +14,7 @@ const StartAProjectSec1 = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Since the first day we entered the competitive business of
-            developing and designing websites for our clients in Singapore,
-            we've held a few characteristics that work as the driving force of
-            our company as we successfully fulfill the requests of a client and
-            await the arrival of the next. Dedication and passion for excellence
-            are the two most important traits of our designers and developers.
+            {head}
           </motion.h5>
           <motion.div
             className="startaprojectsec2_line mt-4"
@@ -34,12 +29,7 @@ const StartAProjectSec1 = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Aidentity is a fast-growing web design and development agency
-            looking to make life easier for small businesses, professional
-            individuals, midsize companies, and large corporations in Singapore
-            by designing creative, fast-loading, responsive, user-friendly, and
-            eye-catching websites within budget. We believe in client
-            acquisition as much as we do in retention.
+            {text1}
           </motion.p>
           <motion.p
             className="fw-bold"
@@ -47,17 +37,7 @@ const StartAProjectSec1 = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Our portfolio includes virtually all kinds of legitimate companies
-            operating within the business sector in Singapore. Our talented web
-            design and development professionals enjoy working on diverse
-            projects that often come with some very specific or highly
-            challenging requirements. Whether yours is a small or medium
-            company, or you're representing a large corporation that needs a
-            stunning look and an efficient functional side, we've got the
-            numbers to impress you. But we take a different approach. We try to
-            go deeper into your business objectives and help you set the right
-            goals for your company as to establishing an online identity and
-            building reputation in Singapore.
+            {text2}
           </motion.p>
           <motion.button
             className="start_project_btn mt-4"
