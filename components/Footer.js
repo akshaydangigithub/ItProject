@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <>
-      <div className="row footer ">
+      <div className="row m-0 footer ">
         <div className="col-md-3 mb-md-0 mb-4 pe-4">
           <h4 className="logo">
             <span>S</span>

@@ -1,7 +1,7 @@
 .footer{
     overflow-x: hidden;
-    width: 102%;
-    background-color: #1E1E1E;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vw;

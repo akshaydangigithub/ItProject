@@ -18,7 +18,7 @@ const page = () => {
       <Noise />
       <Navbar />
       <HeroCommon
-        image={"./website_maintenance.jpg"}
+        image={"./website_maintenance .jpg"}
         head1={"Website"}
         head2={"Maintenance."}
         text1={

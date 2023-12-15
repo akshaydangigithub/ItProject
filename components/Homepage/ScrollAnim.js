@@ -49,7 +49,7 @@ const ScrollAnim = ({
           transform: "translateX(-100%)",
           stagger: 0.1,
           duration: 2,
-          delay: -2,
+          delay: -.5,
           ease: "Expo.ease",
           // markers: true,
         });

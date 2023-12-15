@@ -39,36 +39,21 @@
 .anim_line2::-webkit-scrollbar {
   display: none;
 }
-
-.anim_line1 h1 {
-  width: 200%;
-  /* animation: move 10s linear infinite; */
-}
+.anim_line1 h1,
 .anim_line2 h1 {
-  width: 200%;
-  /* animation: moveReverce 10s linear infinite; */
+  white-space: nowrap;
+}
+.anim_line1 h1 span,
+.anim_line2 h1 span {
+  display: inline-block;
+  flex-shrink: 0;
+  width: max-content;
 }
 
 .anim_line1 h1 span,
 .anim_line2 h1 span {
   font-size: 5vw;
   position: relative;
-}
-
-.anim_line1 h1 span::after,
-.anim_line2 h1 span::after {
-  content: "";
-  position: absolute;
-  height: 50%;
-  width: 4px;
-  background-color: #5a5c5e;
-  top: 50%;
-  transform: translate(0, -50%) rotate(15deg);
-  right: -25px;
-}
-
-.anim_line2 h1 span:last-child::after {
-  display: none;
 }
 
 @keyframes move {
@@ -89,15 +74,14 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .anim_line1 h1 span,
   .anim_line2 h1 span {
     font-size: 6.2vw;
     position: relative;
   }
-  .anim_line2 {
-    padding-left: 0;
-    top: 50%;
+  .anim_line1 h1 span,
+  .anim_line2 h1 span {
+    font-size: 14vw;
   }
 }

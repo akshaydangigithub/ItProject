@@ -34,12 +34,8 @@ const page = () => {
           "and CTAs are always at the forefront of our design and development process, and our company"
         }
         text5={
-          "focuses on developing websites that produce results. Our designers and developers are always"
+          "focuses on developing websites that produce results."
         }
-        text6={
-          "concerned with navigation ease and call to action in our design process. Growing result-oriented"
-        }
-        text7={"websites are what we aim for."}
       />
       <ScrollAnim
         bgcolor={"transparent"}

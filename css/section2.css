@@ -1,5 +1,5 @@
 .section2 {
-  background-color: #191b1d;
+  background-color: #000;
   font-family: f1;
   color: #fff;
   padding: 10vw 2vw 6vw 2vw;
@@ -44,5 +44,11 @@
 @media (max-width: 991px) {
   .section2_content{
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .section2 h1 span{
+    font-size: 6vw;
   }
 }

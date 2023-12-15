@@ -38,7 +38,7 @@ const Section2 = () => {
             whileInView={{ width: "100%" }}
             transition={{ duration: 0.5, delay: 0.2 }}
           ></motion.div>
-          <div className="row mt-5">
+          <div className="row m-0 mt-5">
             <div className="col-md-6 pe-5">
               <motion.h1
                 className="section2_content_num text-md-start text-center"
@@ -78,7 +78,7 @@ const Section2 = () => {
               </h5>
             </div>
           </div>
-          <div className="row mt-4">
+          <div className="row m-0 mt-4">
             <div className="col-md-6 pe-5">
               <motion.h1
                 className="section2_content_num text-md-start text-center"

@@ -4,10 +4,10 @@ nav {
   position: absolute;
   top: 0%;
   left: 0%;
-  z-index: 999;
+  z-index: 9999;
   color: white;
   overflow-x: hidden;
-  padding-top: 7vw;
+  /* padding-top: 7vw; */
   padding-left: 7vw;
   padding-right: 10vw;
 }
@@ -141,7 +141,7 @@ nav {
   top: 0%;
   left: 0%;
   background-color: #191b1d;
-  z-index: 99;
+  z-index: 999;
   transition: all 0.3s ease;
 }
 
@@ -149,10 +149,10 @@ nav {
   height: 100vh;
 }
 
-.prt2_nav > a > h4 {
+.prt2_nav > a > h3 {
   font-family: f1;
   font-weight: 500;
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
   margin-bottom: 20px;
   color: white;
   cursor: pointer;
@@ -161,7 +161,7 @@ nav {
   width: fit-content;
 }
 
-.prt2_nav > a > h4:hover {
+.prt2_nav > a > h3:hover {
   color: #a7a7a7;
   transform: translateX(10px);
 }

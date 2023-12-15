@@ -1,18 +1,22 @@
 "use client";
-
-import Hero from "@/components/Homepage/Hero";
-import Noise from "@/components/Homepage/Noise";
-import Section2 from "@/components/Homepage/Section2";
-import Section3 from "@/components/Homepage/ScrollAnim";
-import Navbar from "@/components/Navbar";
-import React, { useEffect } from "react";
-import Section4 from "@/components/Homepage/Section4";
-import Footer from "@/components/Footer";
-import Loader from "@/components/Loader";
+import React, { useEffect, lazy, Suspense } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Mouse from "@/components/Mouse";
+import Loader from "@/components/Loader";
+
 gsap.registerPlugin(ScrollTrigger);
+
+// Lazy load components
+const LazyMouse = lazy(() => import("@/components/Mouse"));
+const LazyNoise = lazy(() => import("@/components/Homepage/Noise"));
+const LazyLoader = lazy(() => import("@/components/Loader"));
+const LazyNavbar = lazy(() => import("@/components/Navbar"));
+const LazyHero = lazy(() => import("@/components/Homepage/Hero"));
+const LazySection2 = lazy(() => import("@/components/Homepage/Section2"));
+const LazySection3 = lazy(() => import("@/components/Homepage/ScrollAnim"));
+const LazySection4 = lazy(() => import("@/components/Homepage/Section4"));
+const LazyFooter = lazy(() => import("@/components/Footer"));
+
 const Page = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -82,30 +86,32 @@ const Page = () => {
 
   return (
     <>
-      <div className="smooth-scroll-gsap">
-        <Mouse />
-        <Noise />
-        <Loader />
-        <Navbar />
-        <Hero />
-        <Section2 />
-        <Section3
-          bgcolor={"#090c0f"}
-          text1={"Avantist"}
-          text2={"Maison De L'Asie"}
-          text3={"Second Look"}
-          text4={"OTO Wellness"}
-          text5={"PappaRich"}
-          text6={"Reputation Defender"}
-          text7={"iNOVA Jewellery"}
-          text8={"Telescope Studio"}
-          text9={"PrintLab"}
-          text10={"United Lifestyle."}
-          srcLink={"/home_video.mp4"}
-        />
-        <Section4 />
-        <Footer />
-      </div>
+      <Suspense fallback={<Loader />}>
+        <div className="smooth-scroll-gsap">
+          <LazyMouse />
+          <LazyNoise />
+          <LazyLoader />
+          <LazyNavbar />
+          <LazyHero />
+          <LazySection2 />
+          <LazySection3
+            bgcolor={"#000"}
+            text1={"Avantist"}
+            text2={"Maison De L'Asie"}
+            text3={"Second Look"}
+            text4={"OTO Wellness"}
+            text5={"PappaRich"}
+            text6={"Reputation Defender"}
+            text7={"iNOVA Jewellery"}
+            text8={"Telescope Studio"}
+            text9={"PrintLab"}
+            text10={"United Lifestyle."}
+            srcLink={"/home_video.mp4"}
+          />
+          <LazySection4 />
+          <LazyFooter />
+        </div>
+      </Suspense>
     </>
   );
 };

@@ -102,9 +102,12 @@
     padding: 0;
   }
   .herocommon_content {
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+  }
+  .herocommon_content h1{
+    font-size: 9vw;
   }
 }

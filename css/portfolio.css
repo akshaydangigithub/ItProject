@@ -65,7 +65,7 @@
 .visit_website_btn_h6Text,
 .visit_website_btn_right_arrow {
   font-weight: 700;
-  z-index: 99;
+  z-index: 9;
   transition: all 0.6s ease;
 }
 
@@ -135,8 +135,8 @@
     position: absolute;
     z-index: 99;
     top: 50%;
-    left: 60%;
-    width: 95vw;
+    left: 54%;
+    width: 92vw;
     transform: translate(-50%, -50%);
   }
 }

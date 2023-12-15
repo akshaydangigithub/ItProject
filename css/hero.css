@@ -83,9 +83,14 @@
 }
 
 @media (max-width: 768px) {
+  .hero .hero-content {
+    padding-left: 5vw;
+  }
   .text {
     width: 50%;
     bottom: 10%;
+    left: 0%;
+    margin-left: 5vw;
   }
   .learn_more_btn {
     display: none !important;
@@ -93,8 +98,11 @@
 }
 
 @media (max-width: 500px) {
+  .hero{
+    height: 90vh;
+  }
   .text {
     width: 80%;
-    bottom: 10%;
+    top: 60%;
   }
 }

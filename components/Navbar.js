@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="row">
           <div className="col-md-7 m-0 p-0 d-flex align-items-center justify-content-md-start justify-content-between ">
             <Link href="/">
-              <h4 className="logo">
+              {/* <h4 className="logo">
                 <span>S</span>
                 <span>O</span>
                 <span>F</span>
@@ -70,7 +70,8 @@ const Navbar = () => {
                 <span>E</span>
                 <span>R</span>
                 <span>S</span>
-              </h4>
+              </h4> */}
+              <img height={200} className="logo" src="./logo.png" alt="" />
             </Link>
 
             <div
@@ -111,32 +112,32 @@ const Navbar = () => {
           </div>
           <div className="col-md-7 prt2_nav d-flex flex-column justify-content-end ps-5 mt-5 pt-5 mb-md-0 mb-4">
             <Link className="text-decoration-none" href="/aboutUs">
-              <h4>About us</h4>
+              <h3>About us</h3>
             </Link>
             <Link className="text-decoration-none" href="/webDesign">
-              <h4>Website Design</h4>
+              <h3>Website Design</h3>
             </Link>
             <Link className="text-decoration-none" href="/webDevelopment">
-              <h4>Web Development </h4>
+              <h3>Web Development </h3>
             </Link>
             <Link className="text-decoration-none" href="/websiteRevamp">
-              <h4>Website Revamp</h4>
+              <h3>Website Revamp</h3>
             </Link>
 
             <Link className="text-decoration-none" href="/websiteMaintenance">
-              <h4>Website Maintenance</h4>
+              <h3>Website Maintenance</h3>
             </Link>
 
             <Link className="text-decoration-none" href="/ecommerce">
-              <h4>Ecommerce PSG</h4>
+              <h3>Ecommerce PSG</h3>
             </Link>
 
             <Link className="text-decoration-none" href="/portfolio">
-              <h4>Portfolio</h4>
+              <h3>Portfolio</h3>
             </Link>
 
             <Link className="text-decoration-none" href="/getinTouch">
-              <h4>Get in Touch</h4>
+              <h3>Get in Touch</h3>
             </Link>
           </div>
           <div className="col-md-2 d-md-flex d-none align-items-center justify-content-center">

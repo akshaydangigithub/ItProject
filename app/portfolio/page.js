@@ -107,10 +107,10 @@ const page = () => {
         <Navbar />
 
         <div className="portfolio">
-          <div className="row portfolio_row">
-            <div className="col-7 portfolio_left">
-              <div className="row">
-                <div className="col-2 d-md-block d-none">
+          <div className="row m-0 portfolio_row">
+            <div className="col-7 m-0 portfolio_left">
+              <div className="row m-0">
+                <div className="col-2 m-0 d-md-block d-none">
                   <motion.h6
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}

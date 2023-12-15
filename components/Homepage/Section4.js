@@ -11,7 +11,7 @@ const Section4 = () => {
   return (
     <>
       <div className="section4">
-        <div className="row px-md-0 px-4">
+        <div className="row m-0 px-md-0 px-4">
           <div className="col-md-3"></div>
           <div className="col-md-9 section4_content">
             <motion.h6
