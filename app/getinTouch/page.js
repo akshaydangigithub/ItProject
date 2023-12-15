@@ -52,7 +52,6 @@ const page = () => {
         });
       }
       cursorActive();
-      // function for cursor active class end
     }
   }, []);
   return (
