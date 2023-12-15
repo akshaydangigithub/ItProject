@@ -59,6 +59,10 @@ const page = () => {
       <Noise />
       <Navbar />
 
+      <div className="global">
+        <img src="./globe.png" alt="" />
+      </div>
+
       <div className="row m-0 getInTouch">
         <h1>
           We'd love to <br />
