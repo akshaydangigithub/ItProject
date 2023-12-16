@@ -1,12 +1,12 @@
 "use client";
-import Noise from "@/components/Homepage/Noise";
-import Mouse from "@/components/Mouse";
-import Navbar from "@/components/Navbar";
+import Noise from "../../components/Homepage/Noise";
+import Mouse from "../../components/Mouse";
+import Navbar from "../../components/Navbar";
 import React, { useEffect } from "react";
-import "@/css/getInTouch.css";
-import Footer from "@/components/Footer";
+import "../../css/getInTouch.css";
+import Footer from "../../components/Footer";
 import gsap from "gsap";
-import BackToTop from "@/components/BackToTop";
+import BackToTop from "../../components/BackToTop";
 
 const page = () => {
   useEffect(() => {

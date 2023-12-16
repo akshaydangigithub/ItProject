@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import "@/css/signUp.css";
+import "../../css/signUp.css";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import Navbar from "../../components/Navbar";
 import axios from "axios";
 
 const page = () => {

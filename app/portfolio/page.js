@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "@/components/Navbar";
-import Noise from "@/components/Homepage/Noise";
+import Navbar from "../../components/Navbar";
+import Noise from "../../components/Homepage/Noise";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import "@/css/portfolio.css";
+import "../../css/portfolio.css";
 import { FaAnglesRight } from "react-icons/fa6";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";

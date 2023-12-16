@@ -1,15 +1,15 @@
 "use client";
-import AnimImage from "@/components/AnimImage";
-import BackToTop from "@/components/BackToTop";
-import Footer from "@/components/Footer";
-import HeroCommon from "@/components/HeroCommon";
-import Noise from "@/components/Homepage/Noise";
-import ScrollAnim from "@/components/Homepage/ScrollAnim";
-import Mouse from "@/components/Mouse";
-import Navbar from "@/components/Navbar";
-import StartAProjectAnim from "@/components/StartAProjectAnim";
-import StartAProjectSec1 from "@/components/StartAProjectSec1";
-import StartAProjectSec2 from "@/components/StartAProjectSec2";
+import AnimImage from "../../components/AnimImage";
+import BackToTop from "../../components/BackToTop";
+import Footer from "../../components/Footer";
+import HeroCommon from "../../components/HeroCommon";
+import Noise from "../../components/Homepage/Noise";
+import ScrollAnim from "../../components/Homepage/ScrollAnim";
+import Mouse from "../../components/Mouse";
+import Navbar from "../../components/Navbar";
+import StartAProjectAnim from "../../components/StartAProjectAnim";
+import StartAProjectSec1 from "../../components/StartAProjectSec1";
+import StartAProjectSec2 from "../../components/StartAProjectSec2";
 import React from "react";
 
 const page = () => {

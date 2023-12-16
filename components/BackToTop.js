@@ -45,26 +45,26 @@ const BackToTop = () => {
       });
 
     // Cleanup the event listener when the component is unmounted
-    return () => {
-      window.removeEventListener("scroll", updateProgress);
-      window.removeEventListener("scroll", function () {
-        var progressWrap = document.querySelector(".progress-wrap");
-        if (window.scrollY > offset) {
-          progressWrap.classList.add("active-progress");
-        } else {
-          progressWrap.classList.remove("active-progress");
-        }
-      });
-      document
-        .querySelector(".progress-wrap")
-        .removeEventListener("click", function (event) {
-          event.preventDefault();
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-    };
+    // return () => {
+    //   window.removeEventListener("scroll", updateProgress);
+    //   window.removeEventListener("scroll", function () {
+    //     var progressWrap = document.querySelector(".progress-wrap");
+    //     if (window.scrollY > offset) {
+    //       progressWrap.classList.add("active-progress");
+    //     } else {
+    //       progressWrap.classList.remove("active-progress");
+    //     }
+    //   });
+    //   document
+    //     .querySelector(".progress-wrap")
+    //     .removeEventListener("click", function (event) {
+    //       event.preventDefault();
+    //       window.scrollTo({
+    //         top: 0,
+    //         behavior: "smooth",
+    //       });
+    //     });
+    // };
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   return (

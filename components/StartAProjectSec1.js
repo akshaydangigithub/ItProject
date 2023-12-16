@@ -1,5 +1,5 @@
 import React from "react";
-import "@/css/startaprojectsec2.css";
+import "../css/startaprojectsec2.css";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
