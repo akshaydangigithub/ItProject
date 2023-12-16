@@ -1,5 +1,6 @@
 "use client";
 import AnimImage from "@/components/AnimImage";
+import BackToTop from "@/components/BackToTop";
 import Footer from "@/components/Footer";
 import HeroCommon from "@/components/HeroCommon";
 import Noise from "@/components/Homepage/Noise";
@@ -14,6 +15,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="smooth-scroll-gsap" style={{ backgroundColor: "#191a1c" }}>
+       <BackToTop />
       <Mouse />
       <Noise />
       <Navbar />

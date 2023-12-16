@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 import "@/css/getInTouch.css";
 import Footer from "@/components/Footer";
 import gsap from "gsap";
+import BackToTop from "@/components/BackToTop";
 
 const page = () => {
   useEffect(() => {
@@ -58,6 +59,7 @@ const page = () => {
     <div className="smooth-scroll-gsap" style={{ backgroundColor: "#191a1c" }}>
       <Noise />
       <Navbar />
+      <BackToTop />
 
       <div className="global">
         <img src="./globe.png" alt="" />

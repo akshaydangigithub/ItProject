@@ -1,5 +1,5 @@
 import React from "react";
-import "@/css/heroCommon.css";
+import "../css/heroCommon.css";
 import { IoMdArrowRoundDown } from "react-icons/io";
 import { motion } from "framer-motion";
 

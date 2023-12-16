@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import "@/css/scrollAnim.css";
+import "../../css/scrollAnim.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

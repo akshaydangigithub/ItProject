@@ -2,20 +2,21 @@
 import React, { useEffect, lazy, Suspense } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Loader from "@/components/Loader";
+import Loader from "../components/Loader";
+import BackToTop from "../components/BackToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // Lazy load components
-const LazyMouse = lazy(() => import("@/components/Mouse"));
-const LazyNoise = lazy(() => import("@/components/Homepage/Noise"));
-const LazyLoader = lazy(() => import("@/components/Loader"));
-const LazyNavbar = lazy(() => import("@/components/Navbar"));
-const LazyHero = lazy(() => import("@/components/Homepage/Hero"));
-const LazySection2 = lazy(() => import("@/components/Homepage/Section2"));
-const LazySection3 = lazy(() => import("@/components/Homepage/ScrollAnim"));
-const LazySection4 = lazy(() => import("@/components/Homepage/Section4"));
-const LazyFooter = lazy(() => import("@/components/Footer"));
+const LazyMouse = lazy(() => import("../components/Mouse"));
+const LazyNoise = lazy(() => import("../components/Homepage/Noise"));
+const LazyLoader = lazy(() => import("../components/Loader"));
+const LazyNavbar = lazy(() => import("../components/Navbar"));
+const LazyHero = lazy(() => import("../components/Homepage/Hero"));
+const LazySection2 = lazy(() => import("../components/Homepage/Section2"));
+const LazySection3 = lazy(() => import("../components/Homepage/ScrollAnim"));
+const LazySection4 = lazy(() => import("../components/Homepage/Section4"));
+const LazyFooter = lazy(() => import("../components/Footer"));
 
 const Page = () => {
   useEffect(() => {
@@ -88,6 +89,7 @@ const Page = () => {
     <>
       <Suspense fallback={<Loader />}>
         <div className="smooth-scroll-gsap">
+          <BackToTop />
           <LazyMouse />
           <LazyNoise />
           <LazyLoader />

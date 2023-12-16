@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import "@/css/navbar.css";
+import "../css/navbar.css";
 import Link from "next/link";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -57,8 +57,8 @@ const Navbar = () => {
       <nav>
         <div className="row">
           <div className="col-md-7 m-0 p-0 d-flex align-items-center justify-content-md-start justify-content-between ">
-            <Link href="/">
-              {/* <h4 className="logo">
+            <Link  href="/">
+              <h4 className="logo">
                 <span>S</span>
                 <span>O</span>
                 <span>F</span>
@@ -70,8 +70,8 @@ const Navbar = () => {
                 <span>E</span>
                 <span>R</span>
                 <span>S</span>
-              </h4> */}
-              <img height={200} className="logo" src="./logo.png" alt="" />
+              </h4>
+              {/* <img height={200} className="logo" src={logo} alt="" /> */}
             </Link>
 
             <div

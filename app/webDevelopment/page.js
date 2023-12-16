@@ -1,5 +1,6 @@
 "use client";
 import AnimImage from "@/components/AnimImage";
+import BackToTop from "@/components/BackToTop";
 import Footer from "@/components/Footer";
 import HeroCommon from "@/components/HeroCommon";
 import Noise from "@/components/Homepage/Noise";
@@ -16,6 +17,7 @@ const page = () => {
     <div className="smooth-scroll-gsap" style={{ backgroundColor: "#191a1c" }}>
       <Mouse />
       <Noise />
+      <BackToTop />
       <Navbar />
       <HeroCommon
         image={"./corporate_web.jpg"}
@@ -33,9 +35,7 @@ const page = () => {
         text4={
           "and CTAs are always at the forefront of our design and development process, and our company"
         }
-        text5={
-          "focuses on developing websites that produce results."
-        }
+        text5={"focuses on developing websites that produce results."}
       />
       <ScrollAnim
         bgcolor={"transparent"}

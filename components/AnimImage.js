@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import "@/css/section4.css";
+import "../css/section4.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

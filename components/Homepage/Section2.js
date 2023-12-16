@@ -1,5 +1,5 @@
 import React from "react";
-import "@/css/section2.css";
+import "../../css/section2.css";
 import { motion } from "framer-motion";
 
 const Section2 = () => {

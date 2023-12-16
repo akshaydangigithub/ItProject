@@ -1,0 +1,46 @@
+body {
+    background-color: #EEEFF1;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 1.5rem 3rem 2rem 3rem;
+    border-radius: 10px;
+}
+.custom-input{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+textarea{
+    height: 16vh;
+    width: 100%;
+    border: 2px solid gray;
+}
+button{
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.custom-col{
+    padding-top: 4rem;
+
+    >p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    >h1{
+        font-size: 1.5rem;
+        color: #0D51FF;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}

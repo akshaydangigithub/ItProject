@@ -1,5 +1,5 @@
 import React from "react";
-import "@/css/section4.css";
+import "../../css/section4.css";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import AnimImage from "../AnimImage";

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "@/css/section4.css";
+import "../css/section4.css";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 

@@ -7,7 +7,7 @@ nav {
   z-index: 9999;
   color: white;
   overflow-x: hidden;
-  /* padding-top: 7vw; */
+  padding-top: 5vw;
   padding-left: 7vw;
   padding-right: 10vw;
 }

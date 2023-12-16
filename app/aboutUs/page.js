@@ -10,11 +10,13 @@ import StartAProjectSec2 from "@/components/StartAProjectSec2";
 import Footer from "@/components/Footer";
 import Noise from "@/components/Homepage/Noise";
 import Mouse from "@/components/Mouse";
+import BackToTop from "@/components/BackToTop";
 
 const page = () => {
   return (
     <>
       <div className="smooth-scroll-gsap" style={{ backgroundColor: "#191a1c" }}>
+        <BackToTop />
         <Mouse />
         <Noise />
         <Navbar />
